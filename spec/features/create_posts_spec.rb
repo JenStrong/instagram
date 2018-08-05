@@ -6,6 +6,6 @@ feature 'creating posts' do
     click_link 'Create Post'
     fill_in 'Caption', with: 'caption'
     click_button 'Create Post'
-    expect(page).to have_conent('caption')
+    expect(page).to have_content('caption')
   end
 end
